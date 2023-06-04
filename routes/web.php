@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('/login', 'login');
+Route::view('/home', 'home');
+Route::view('/about', 'about');
+Route::view('/profile', 'profile');
+Route::view('/keranjang', 'keranjang');
+Route::view('/checkout', 'checkout');
+Route::view('/daftar-produk', 'daftar-produk');
+Route::view('/detail-produk', 'detail-produk');
+Route::view('/ulasan', 'ulasan');
