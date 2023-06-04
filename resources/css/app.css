@@ -167,3 +167,21 @@ body {
         max-width: 80%;
     }
 }
+
+/* Dashboard Penjual */
+.dashboard-menu {
+    max-width: calc(220rem / 16);
+    text-align: center;
+}
+
+/* Kelola Produk */
+.product-manage {
+    width: calc(141rem / 16);
+    height: calc(141rem / 16);
+}
+
+/* Proses Pesanan */
+.pesanan {
+    width: calc(77rem / 16);
+    height: calc(73rem / 16);
+}

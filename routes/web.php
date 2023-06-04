@@ -26,3 +26,10 @@ Route::view('/checkout', 'checkout');
 Route::view('/daftar-produk', 'daftar-produk');
 Route::view('/detail-produk', 'detail-produk');
 Route::view('/ulasan', 'ulasan');
+
+Route::view('/penjual/login', 'penjual.login');
+Route::view('/penjual/buat-akun', 'penjual.buat-akun');
+Route::view('/penjual/dashboard', 'penjual.dashboard');
+Route::view('/penjual/data-pembelian', 'penjual.data-pembelian');
+Route::view('/penjual/kelola-produk', 'penjual.kelola-produk');
+Route::view('/penjual/proses-pesanan', 'penjual.proses-pesanan');
