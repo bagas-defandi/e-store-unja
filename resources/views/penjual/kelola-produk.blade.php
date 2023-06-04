@@ -12,7 +12,7 @@
 <body>
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-normal mx-auto p-4">
-            <a href="#" class="flex items-center">
+            <a href="{{ url('/penjual/dashboard') }}" class="flex items-center">
                 <img src="../img/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
             </a>
             <div class="relative hidden md:block">
@@ -46,19 +46,19 @@
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
-                            <a href="#"
+                            <a href="{{ url('/penjual/dashboard') }}"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                            <a href="{{ url('/penjual/kelola-produk') }}"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Produk</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                            <a href="{{ url('/penjual/proses-pesanan') }}"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Pesanan</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="{{ url('/penjual/login') }}"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
                                 out</a>
                         </li>
@@ -102,21 +102,21 @@
                 <h2 class="text-xl font-bold pb-1 mb-4 lg:mb-10">SiniMakan : Aldi Sukma Putra</h2>
                 <div class="grid justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
                     <div class="dashboard-menu">
-                        <a href="#"
+                        <a href="{{ url('/penjual/data-pembelian') }}"
                             class="rounded-3xl bg-amber-400 p-6 grid justify-items-center hover:bg-amber-500">
                             <img src="../img/icon-pembelian.png" alt="">
                         </a>
                         <h3 class="ff-raleway font-bold text-lg lg:text-xl lg:mt-2">Data Pembelian</h3>
                     </div>
                     <div class="dashboard-menu pb-2 border-b-2 border-black">
-                        <a href="#"
+                        <a href="{{ url('/penjual/kelola-produk') }}"
                             class="rounded-3xl bg-amber-400 p-6 grid justify-items-center hover:bg-amber-500">
                             <img src="../img/icon-produk.png" alt="">
                         </a>
                         <h3 class="ff-raleway font-bold text-lg lg:text-xl lg:mt-2">Kelola Produk</h3>
                     </div>
                     <div class="dashboard-menu">
-                        <a href="#"
+                        <a href="{{ url('/penjual/proses-pesanan') }}"
                             class="rounded-3xl bg-amber-400 p-6 grid justify-items-center hover:bg-amber-500">
                             <img src="../img/icon-pesanan.png" alt="">
                         </a>

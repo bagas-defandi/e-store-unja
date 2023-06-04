@@ -39,7 +39,8 @@
                 <div class="grid justify-items-center bg-white w-full max-w-xl pt-14 px-9 pb-10 rounded-xl">
                     <img src="../img/icon-profile-login.png" alt="">
                     <p class="font-bold mt-3.5">Login sebagai penjual</p>
-                    <form class="w-full text-center" action="" method="post">
+                    <form class="w-full text-center" action="{{ url('/penjual/dashboard') }}" method="post">
+                        @csrf
                         <input class="nim-input placeholder-black w-full mb-8 mt-6 block p-3 rounded-sm" type="text"
                             id="nim" name="nim" placeholder="NIM/NIP">
                         <input class="pass-input placeholder-black w-full my-8 block p-3 rounded-sm" type="password"
@@ -48,9 +49,10 @@
                     </form>
                     <p class="font-bold mt-11">Belum mempunyai akun penjual? Silahkan <a
                             class="hover:underline hover:underline-offset-4" style="color: #3A16C9"
-                            href="">Daftar</a></p>
+                            href="{{ url('/penjual/buat-akun') }}">Daftar</a></p>
                 </div>
-                <a class="text-white font-bold my-4 hover:cursor-pointer hover:underline hover:underline-offset-8">Login
+                <a href="{{ url('/login') }}"
+                    class="text-white font-bold my-4 hover:cursor-pointer hover:underline hover:underline-offset-8">Login
                     sebagai
                     pembeli
                     <svg class="inline -m-2" width="42" height="42" viewBox="0 0 42 42" fill="none"
